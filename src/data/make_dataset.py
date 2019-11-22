@@ -1,30 +1,42 @@
-# -*- coding: utf-8 -*-
-import click
-import logging
-from pathlib import Path
-from dotenv import find_dotenv, load_dotenv
+import pandas as pd
+import numpy as np
+import os
+
+class CopyData:
+
+    #This directory
+    this_dir = os.path.dirname(__file__ )
+
+    #Raw data directory
+    input_dir = os.path.abspath(os.path.join(this_dir,'../../data/raw'))
+
+    #Processed data directory
+    output_dir = os.path.abspath(os.path.join(this_dir,'../../data/processed'))
 
 
-@click.command()
-@click.argument('input_filepath', type=click.Path(exists=True))
-@click.argument('output_filepath', type=click.Path())
-def main(input_filepath, output_filepath):
-    """ Runs data processing scripts to turn raw data from (../raw) into
-        cleaned data ready to be analyzed (saved in ../processed).
-    """
-    logger = logging.getLogger(__name__)
-    logger.info('making final data set from raw data')
+    def copy_raw_to_processed(self):
+        '''
+        Func: Copies .csv files from one folder to another folder
+        Args:
+            input_dir -- input directory containing raw .csv files
+            output_dir -- output directory where copied .csv files will be placed
+        '''
+        for file_name in os.listdir(self.input_dir):
+            os.chdir(self.input_dir)
+            if '.csv' in file_name:
+                print(file_name)
+                df = pd.read_csv(file_name)
+                os.chdir(self.output_dir)
+                df.to_csv(file_name)
+            else:
+                pass
 
+        print('Raw data copied from {self.input_dir} to {self.output_dir}')
+
+
+
+def main():
+    CopyData().copy_raw_to_processed()
 
 if __name__ == '__main__':
-    log_fmt = '%(asctime)s - %(name)s - %(levelname)s - %(message)s'
-    logging.basicConfig(level=logging.INFO, format=log_fmt)
-
-    # not used in this stub but often useful for finding various files
-    project_dir = Path(__file__).resolve().parents[2]
-
-    # find .env automagically by walking up directories until it's found, then
-    # load up the .env entries as environment variables
-    load_dotenv(find_dotenv())
-
     main()
