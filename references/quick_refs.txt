@@ -1,2 +1,5 @@
 'Lidar DEM over the Mount Timp area (0.5 m)'
 https://gis.utah.gov/data/elevation-and-terrain/2018-lidar-central-utah/
+
+'Timp Divide SNOTEL station'
+https://wcc.sc.egov.usda.gov/nwcc/site?sitenum=820
