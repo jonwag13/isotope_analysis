@@ -1,0 +1,8 @@
+SNOTEL Site: Timpanogos Divide 
+State: Utah 
+Site Number: 820 
+County: Utah 
+Latitude: 40 deg; 26 min N 
+Longitude: 111 deg; 37 min W 
+Elevation: 8140 feet 
+Reporting since: 1978-10-01 
