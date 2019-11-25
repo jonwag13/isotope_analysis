@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE metadata SYSTEM "http://www.fgdc.gov/metadata/fgdc-std-001-1998.dtd">
+<metadata>
+ <idinfo>
+  <citation>
+   <citeinfo>
+    <origin>Aero-Graphics, Inc.</origin>
+    <pubdate>20190304</pubdate>
+    <title>Utah 2018 Lidar - CentralUtah_QL1; Calibration Points</title>
+    <geoform>vector data</geoform>
+   </citeinfo>
+  </citation>
+  <descript>
+   <abstract>Product: Calibration Points collected for use in calibrating the 2018 Utah Lidar data and delivered in ESRI shapefile format.
+
+    Geographic Extent: Northern, Central, and Southern Utah, covering approximately 10,450 square miles; partial coverage of 8 counties covering approximately 1,756 square miles in the Central Utah QL1 AOIs (Park City, Utah County, Wasatch Mountains, Western San Rafael Swell).
+
+    Dataset Description: Utah 2018 Lidar project called for the planning, acquisition, processing, and derivative products of Lidar data to be collected at a nominal pulse spacing (NPS) of 0.35 meters. Project specifications are based on the U.S. Geological Survey National Geospatial Program Base Lidar Specification, Version 1.2. The data was developed based on a horizontal projection/datum of NAD83 (2011), UTM Zone 12, meters and vertical datum of NAVD88 (GEOID12B), meters. Lidar data was delivered as flightline-extent unclassified LAS swaths, as processed Classified LASv1.4 files formatted to 5065 individual 1,000 meter x 1,000 meter tiles; as tiled intensity imagery, as tiled bare-earth DEMs, and as tiled first-return DSMs, tiled with a mix of 1,000 meter x 1,000 meter and 2,000 meter x 2,000 meter schema (1604 tiles). Continuous breaklines were produced in ESRI shapefile format.
+
+    Ground Conditions: Lidar was collected in spring of 2018, while no snow was on the ground and rivers were at or below normal levels. In order to post process the Lidar data to meet task order specifications and meet ASPRS vertical accuracy guidelines, Aero-Graphics, Inc. established a total of 29 ground control points that were used to calibrate the Lidar to known ground locations established throughout the AOI project area. An additional 479 independent accuracy checkpoints, 380 in Bare Earth and Urban landcovers (380 NVA points), 99 in the Shrubs category (99 VVA points), were used to assess the vertical accuracy of the data. These checkpoints were not used to calibrate or post process the data.</abstract>
+   <purpose>To acquire detailed surface elevation data for use in conservation planning, design, research, floodplain mapping, dam safety assessments and elevation modeling, etc. Classified LAS files are used to show the manually reviewed bare earth surface. This allows the user to create intensity images, breaklines and raster DEMs and DSMs. The purpose of these Lidar data was to produce high accuracy 3D hydro-flattened digital elevation models (DEMs) with a 0.5 meter cell size. These raw Lidar point cloud data were used to create classified Lidar LAS files, intensity images, 3D breaklines, hydro-flattened DEMs, and first return DSMs as necessary.</purpose>
+   <supplinf>State of Utah Contract No. AV2406 Contractor: Aero-Graphics, Inc. Lidar data were acquired and calibrated by Aero-Graphics, Inc. All follow-on processing was completed by the prime contractor.</supplinf>
+  </descript>
+  <timeperd>
+   <timeinfo>
+    <rngdates>
+     <begdate>20180605</begdate>
+     <enddate>20180903</enddate>
+    </rngdates>
+   </timeinfo>
+   <current>ground condition</current>
+  </timeperd>
+  <status>
+   <progress>Complete</progress>
+   <update>None planned</update>
+  </status>
+  <spdom>
+   <bounding>
+    <westbc>-112.18727836700039</westbc>
+    <eastbc>-110.62572366916018</eastbc>
+    <northbc>40.713484493120326</northbc>
+    <southbc>39.058127512348257</southbc>
+   </bounding>
+  </spdom>
+  <keywords>
+   <theme>
+    <themekt>None</themekt>
+    <themekey>Model</themekey>
+    <themekey>Calibration Points</themekey>
+   </theme>
+   <place>
+    <placekt>None</placekt>
+    <placekey>Utah</placekey>
+    <placekey>Carbon County</placekey>
+    <placekey>Emery County</placekey>
+    <placekey>Juab County</placekey>
+    <placekey>Salt Lake County</placekey>
+    <placekey>Summit County</placekey>
+    <placekey>Tooele County</placekey>
+    <placekey>Utah County</placekey>
+    <placekey>Wasatch County</placekey>
+   </place>
+  </keywords>
+  <accconst>No restrictions apply to these data.</accconst>
+  <useconst>None. However, users should be aware that temporal changes may have occurred since this dataset was collected and that some parts of these data may no longer represent actual surface conditions. Users should not use these data for critical applications without a full awareness of the limitations of the data. Acknowledgement of the U.S. Geological Survey would be appreciated for products derived from these data.</useconst>
+ </idinfo>
+ <dataqual>
+  <logic>Data covers the entire area specified for this project.</logic>
+  <complete>All files are inspected to ensure that they conform to the specified file naming conventions, all files load in their correct geographic position, all files conform to the project specifications for file standard and content.</complete>
+  <lineage>
+   <procstep>
+    <procdesc>Calibration Control Point Processing: Control points were targeted and surveyed by Aero-Graphics, Inc. Control points were processed horizontally to NAD83(2011), UTM Zone 12, Meters and vertically to NAVD88(GEOID12B), meters. Please see the survey report for more information on control point coordinates and location methodologies. The calibration control point shapefiles were generated from XYZ text files using a combination of Global Mapper and ArcMap software.</procdesc>
+    <procdate>2018</procdate>
+   </procstep>
+  </lineage>
+ </dataqual>
+ <spdoinfo>
+  <direct>Point</direct>
+ </spdoinfo>
+ <spref>
+  <horizsys>
+   <planar>
+    <gridsys>
+     <gridsysn>Universal Transverse Mercator</gridsysn>
+     <utm>
+      <utmzone>12</utmzone>
+      <transmer>
+       <sfctrmer>0.9996</sfctrmer>
+       <longcm>-111.0</longcm>
+       <latprjo>0.0</latprjo>
+       <feast>500000.0</feast>
+       <fnorth>0.0</fnorth>
+      </transmer>
+     </utm>
+    </gridsys>
+    <planci>
+     <plance>coordinate pair</plance>
+     <coordrep>
+      <absres>0.001</absres>
+      <ordres>0.001</ordres>
+     </coordrep>
+     <plandu>meters</plandu>
+    </planci>
+   </planar>
+   <geodetic>
+    <horizdn>D_NAD_1983_2011</horizdn>
+    <ellips>Geodetic Reference System 80</ellips>
+    <semiaxis>6378137</semiaxis>
+    <denflat>298.257222101</denflat>
+   </geodetic>
+  </horizsys>
+  <vertdef>
+   <altsys>
+    <altdatum>North American Vertical Datum of 1988 (GEOID12B)</altdatum>
+    <altres>0.001</altres>
+    <altunits>meters</altunits>
+    <altenc>Explicit elevation coordinate included with horizontal coordinates</altenc>
+   </altsys>
+  </vertdef>
+ </spref>
+ <eainfo>
+  <detailed>
+   <enttyp>
+    <enttypl>Calibration Control Point</enttypl>
+    <enttypd>An accurately surveyed coordinate location for a physical feature that can be identified on the ground. Control points are used in least-squares adjustments as the basis for improving the spatial accuracy of all other points to which they are connected.</enttypd>
+    <enttypds>ESRI GIS Dictionary http://support.esri.com/en/knowledgebase/GISDictionary/term/control%20point</enttypds>
+   </enttyp>
+   <attr>
+    <attrlabl>FID</attrlabl>
+    <attrdef>Internal feature number.</attrdef>
+    <attrdefs>ESRI</attrdefs>
+    <attrdomv>
+     <udom>Sequential unique whole numbers that are automatically generated.</udom>
+    </attrdomv>
+   </attr>
+   <attr>
+    <attrlabl>Shape</attrlabl>
+    <attrdef>Feature geometry.</attrdef>
+    <attrdefs>ESRI</attrdefs>
+    <attrdomv>
+     <udom>Feature geometry - Point ZM</udom>
+    </attrdomv>
+   </attr>
+   <attr>
+    <attrlabl>Name</attrlabl>
+    <attrdef>Name assigned to each Calibration Control Point</attrdef>
+    <attrdefs>Lidar Data</attrdefs>
+    <attrdomv>
+     <udom>Unique identifier assigned to each Calibration Control Point. Point numbers assigned by surveyor</udom>
+    </attrdomv>
+   </attr>
+   <attr>
+    <attrlabl>X</attrlabl>
+    <attrdef>Easting coordinate in project coordinate system for each Calibration Control Point</attrdef>
+    <attrdefs>Lidar Data</attrdefs>
+    <attrdomv>
+     <edom>
+      <edomv>Calibration Control Point Easting</edomv>
+      <edomvd>Easting coordinate in project coordinate system for each Calibration Control Point</edomvd>
+      <edomvds>Values are calculated by survey manager</edomvds>
+     </edom>
+    </attrdomv>
+   </attr>
+   <attr>
+    <attrlabl>Y</attrlabl>
+    <attrdef>Northing coordinate in project coordinate system for each Calibration Control Point</attrdef>
+    <attrdefs>Lidar Data</attrdefs>
+    <attrdomv>
+     <edom>
+      <edomv>Calibration Control Point Northing</edomv>
+      <edomvd>Northing coordinate in project coordinate system for each Calibration Control Point</edomvd>
+      <edomvds>Values are calculated by survey manager</edomvds>
+     </edom>
+    </attrdomv>
+   </attr>
+   <attr>
+    <attrlabl>Z</attrlabl>
+    <attrdef>Elevation in project coordinate system for each Calibration Control Point</attrdef>
+    <attrdefs>Lidar Data</attrdefs>
+    <attrdomv>
+     <edom>
+      <edomv>Calibration Control Point Elevation</edomv>
+      <edomvd>Elevation in project coordinate system for each Calibration Control Point</edomvd>
+      <edomvds>Values are calculated by survey manager</edomvds>
+     </edom>
+    </attrdomv>
+   </attr>
+  </detailed>
+  <overview>
+   <eaover>Calibration Control Points are used to finalize the calibration of the Lidar data. Points are used to eliminate any vertical bias between the Lidar dataset and the surveyed ground elevations.</eaover>
+   <eadetcit>More detail about the attributes of this data set can be found in LAS 1.4 specifications and USGS Lidar Base Specification Version 1.2.</eadetcit>
+  </overview>
+ </eainfo>
+ <distinfo>
+  <distrib>
+   <cntinfo>
+    <cntorgp>
+     <cntorg>Utah AGRC</cntorg>
+    </cntorgp>
+    <cntaddr>
+     <addrtype>physical and mailing</addrtype>
+     <address>1 State Office Building, Room 5130</address>
+     <city>Salt Lake City</city>
+     <state>UT</state>
+     <postal>84114</postal>
+     <country>USA</country>
+    </cntaddr>
+    <cntvoice>801-538-3665</cntvoice>
+    <cntemail>agrc@utah.gov</cntemail>
+   </cntinfo>
+  </distrib>
+  <resdesc>Owner</resdesc>
+  <distliab>In no event shall the creators, custodians, or distributors of this information be liable for any damages arising out of its use (or the inability to use it).</distliab>
+ </distinfo>
+ <metainfo>
+  <metd>20190304</metd>
+  <metc>
+   <cntinfo>
+    <cntorgp>
+     <cntorg>Aero-Graphics, Inc.</cntorg>
+    </cntorgp>
+    <cntaddr>
+     <addrtype>mailing and physical address</addrtype>
+     <address>40 West Oakland Avenue</address>
+     <city>Salt Lake City</city>
+     <state>UT</state>
+     <postal>84115-3007</postal>
+     <country>USA</country>
+    </cntaddr>
+    <cntvoice>801-487-3273</cntvoice>
+    <cntfax>801-487-3313</cntfax>
+    <cntemail>agi@aero-graphics.com</cntemail>
+    <hours>Monday through Friday 8:00 AM to 5:00 PM (Mountain Time)</hours>
+   </cntinfo>
+  </metc>
+  <metstdn>FGDC Content Standard for Digital Geospatial Metadata</metstdn>
+  <metstdv>FGDC-STD-001-1998</metstdv>
+  <metac>None</metac>
+  <metuc>None</metuc>
+  <metsi>
+   <metscs>None</metscs>
+   <metsc>Unclassified</metsc>
+   <metshd>None</metshd>
+  </metsi>
+ </metainfo>
+</metadata>
