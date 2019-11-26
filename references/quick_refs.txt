@@ -3,3 +3,6 @@ https://gis.utah.gov/data/elevation-and-terrain/2018-lidar-central-utah/
 
 'Timp Divide SNOTEL station'
 https://wcc.sc.egov.usda.gov/nwcc/site?sitenum=820
+
+'Landsat images over Mount Timp area'
+https://earthexplorer.usgs.gov/
