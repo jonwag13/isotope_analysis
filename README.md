@@ -5,3 +5,4 @@ My portion of a group research project which focused on analyzing heavy water is
 Python code for project is located in the src folder.
 
 # Libraries Used
+#Pandas #Numpy #Matplotlib #Scipy #Datetime #OS #Pillow #Rasterio
